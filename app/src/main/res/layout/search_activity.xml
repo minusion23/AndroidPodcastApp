@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolBarSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_layout_height"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/app_bar_layout_elevation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/action_up"
+                android:layout_width="@dimen/normal_width"
+                android:layout_height="@dimen/typical_button_height"
+                android:layout_marginStart="@dimen/smaller_margin"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:contentDescription="@string/back_button_description"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:gravity="start"
+                android:text="@string/application_mainscreen_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/standard_text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/searchPodcastEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smaller_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_weight="1"
+                android:focusedByDefault="false"
+                android:gravity="center"
+                android:hint="@string/search_hint" />
+
+            <ImageButton
+                android:id="@+id/searchImageButton"
+                android:layout_width="@dimen/normal_width"
+                android:layout_height="@dimen/typical_button_height"
+                android:layout_marginStart="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:contentDescription="@string/seach_button"
+                android:src="@drawable/outline_search_white_18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarSearchResult" />
+
+    <TextView
+        android:id="@+id/tv_empty_text_search_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_retrieved_string"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

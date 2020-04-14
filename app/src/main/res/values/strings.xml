@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Your Podcast App</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="URL_error_string">Error with creating URL</string>
+    <string name="download_channel">Download</string>
+    <string name="application_name">Your podcast app</string>
+    <string name="internet_error">There seems to be no internet connection. Please turn on the internet and refresh the app</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="podcast_search_result">Searched podcast</string>
+    <string name="application_mainscreen_name">Your Podcast App</string>
+    <string name="search_hint">Search</string>
+    <string name="back_button_description">back_button</string>
+    <string name="seach_button">search_button</string>
+    <string name="no_data_retrieved_string">No Data retrieved</string>
+    <string name="back_button">Back button</string>
+    <string name="brief_description">Brief Description</string>
+    <string name="podcast_artwork">Podcast artwork</string>
+    <string name="podcast_name">Podcast name</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="your_podcast_app">Your podcast App</string>
+    <string name="fab_text">+</string>
+    <string name="fab_description">Button to add podcast</string>
+    <string name="no_data">No data</string>
+    <string name="episode_artwork_description">Episode Artwork</string>
+    <string name="no_internet_toast">There is no internet connection. Please turn the internet on and restart the app</string>
+    <string name="default_share_string">I\'ve come across this interesting podcast. Check this out</string>
+    <string name="there_are_no_items_added_to_the_database_yet">There are no items added to the database yet</string>
+    <string name="episode_artwork">Episode artwork</string>
+</resources>

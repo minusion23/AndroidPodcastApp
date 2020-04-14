@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/standard_margin"
+    android:elevation="@dimen/const_layout_episode_elevation">
+
+
+    <ImageView
+        android:id="@+id/episode_artwork"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:contentDescription="@string/episode_artwork_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/episode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/episode_artwork"
+        app:layout_constraintTop_toBottomOf="@+id/episode_date" />
+
+    <TextView
+        android:id="@+id/episode_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@+id/episode_reference"
+        app:layout_constraintTop_toTopOf="@+id/episode_reference" />
+
+    <TextView
+        android:id="@+id/episode_date"
+        android:layout_width="@dimen/episodate_date_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/episode_duration"
+        app:layout_constraintTop_toTopOf="@+id/episode_duration" />
+
+    <TextView
+        android:id="@+id/episode_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/episode_artwork"
+        app:layout_constraintTop_toBottomOf="@+id/episode_title" />
+
+    <TextView
+        android:id="@+id/season_reference"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@+id/episode_artwork"
+        app:layout_constraintTop_toTopOf="@+id/episode_artwork" />
+
+    <TextView
+        android:id="@+id/episode_reference"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@+id/season_reference"
+        app:layout_constraintTop_toTopOf="@+id/season_reference" />
+
+
+</android.support.constraint.ConstraintLayout>

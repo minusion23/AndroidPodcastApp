@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0d47a1</color>
+    <color name="colorPrimaryDark">#002171</color>
+    <color name="colorAccent">#26c6da</color>
+    <color name= "color_primary_light">#5472d3</color>
+    <color name= "color_secondary_light">#6ff9ff</color>
+    <color name="tv_title_color">#0093c4</color>
+    <color name="tv_body_color">#6b9b37</color>
+    <color name="widget_color">#ffffff</color>
+    <color name="widget_background_color">#09C</color>
+
+
+</resources>
